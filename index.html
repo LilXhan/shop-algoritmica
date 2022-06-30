@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap" rel="stylesheet">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" style=" background-color: #e3f2fd">
+    <div class=" container-fluid">
+      <a class="navbar-brand" href="#">ComputerSAC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactos</a>
+          </li>
+        </ul>
+        <a style=" background-color: #e3f2fd" id="listCss">
+          <div class="btn-group">
+            <button class="btn dropdown-toggle" style="background-color: #e3f2fd; color:black" type="button"
+              id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              aria-expanded="false">
+              Carrito de Compras
+              <img src="./img/shopping_cart_FILL0_wght400_GRAD0_opsz48.png">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-100" id="list">
+            </ul>
+            <li class="list-group text-center" id="listFooter"></li>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-3 mt-3">
+        <div class="card text-center">
+          <img src=" ./img/71M4pG5B6zS._AC_SX450_.jpg" class=" text-center-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tarjeta de Video</h5>
+            <p class="card-text lead">$<span>250</span></p>
+            <button class="btn btn-outline-primary" data-item="Tarjeta de Video" data-precio="250">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 mt-3">
+        <div class="card text-center">
+          <img src=" ./img/procesador-intel-core-i5-10400f-bx8070110400f-29ghz-120mb-lga-1200.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Procesador</h5>
+            <p class="card-text lead">$<span>200</span></p>
+            <button class="btn btn-outline-primary" data-item="Procesador" data-precio="200">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 mt-5">
+        <div class="card text-center">
+          <img src=" ./img/ROG-STRIX-B450-F-GAMING.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Motherboard</h5>
+            <p class="card-text lead">$<span>180</span></p>
+            <button class="btn btn-outline-primary" data-item="Motherboard" data-precio="180">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 mt-3">
+        <div class="card text-center">
+          <img src="./img/case.jpg" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Case Vampiric</h5>
+            <p class="card-text lead">$<span>100</span></p>
+            <button class="btn btn-outline-primary" data-item="Case Vampiric" data-precio="100">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 mt-3">
+        <div class="card text-center">
+          <img src="./img/ram.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Memoria RAM</h5>
+            <p class="card-text lead">$<span>80</span></p>
+            <button class="btn btn-outline-primary" data-item="Memoria RAM" data-precio="80">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 mt-3 mb-3">
+        <div class="card text-center">
+          <img src="./img/fuente de poder.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fuente de Poder</h5>
+            <p class="card-text lead">$<span>110</span></p>
+            <button class="btn btn-outline-primary" data-item="Fuente de Poder" data-precio="110">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 mt-3">
+        <div class="card text-center">
+          <img src="./img/es-860-evo-sata-3-2-5-ssd-mz-76e500b-eu-frontblack-273732119.webp" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SSD</h5>
+            <p class="card-text lead">$<span>90</span></p>
+            <button class="btn btn-outline-primary" data-item="SSD" data-precio="90">Comprar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 mt-3">
+        <div class="card text-center">
+          <img src="./img/17603-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Monitor</h5>
+            <p class="card-text lead">$<span>300</span></p>
+            <button class="btn btn-outline-primary" data-item="Monitor" data-precio="300">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <template id="templateList">
+    <ul>
+      <li class="list-group-item justify-content-between align-items-center">
+        <span class="badge bg-primary rounded-pill">14</span>
+        <span id="component">A list item</span>
+      </li>
+      <li class="list-group-item  justify-content-between align-items-center">
+        <div>
+          <p class="lead mb-0">Total $100</p>
+        </div>
+        <div class="d-flex flex-row-reverse">
+          <button class="btn btn-sm btn-danger m-1">Quitar</button>
+          <button class="btn btn-sm btn-success m-1">Agregar</button>
+        </div>
+      </li>
+    </ul>
+  </template>
+
+  <template id="templateFooter">
+    <div class="card">
+      <div class="card-body">
+        <h5 id="total">Total</h5>
+        <button class="btn btn-outline-primary">Finalizar Compra</button>
+      </div>
+    </div>
+  </template>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

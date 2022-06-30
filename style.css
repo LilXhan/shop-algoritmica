@@ -1,0 +1,17 @@
+body {
+  font-family: 'Overpass Mono', monospace;
+  background-color: #1d2127;
+}
+
+nav {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 15px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+#listCss {
+  color: black;
+}
